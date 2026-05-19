@@ -1,5 +1,18 @@
+/*
+ Name: Caleb Bettencourt, Joann Monteiro, Masaki Takenaka, 
+ Sama Aledan, Tan Pham, Valmir Muratovski
+
+Student ID: 991727296
+Assignment: ICE3
+
+This class calculates change using quarters, dimes, and nickels.
+*/
 package main;
 
 public class MakeChange {
+	public static String makeChange(int cents)
+            throws BadChangeException {
 
+        return "";
+    }
 }
