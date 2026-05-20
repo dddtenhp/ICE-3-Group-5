@@ -17,12 +17,10 @@ import org.junit.jupiter.api.Test;
 
 import main.BadChangeException;
 import main.MakeChange;
-import org.junit.jupiter.api.Disabled;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class MakeChangeTest {
 	
-	 @Disabled
 	 @Test
 	    void testMakeChange40Cents() throws BadChangeException {
 
@@ -32,7 +30,6 @@ public class MakeChangeTest {
 	        );
 	 }
 	 
-	 @Disabled
 	 @Test
 	 void testMakeChange19Cents() throws BadChangeException {
 	     assertEquals(
@@ -41,7 +38,6 @@ public class MakeChangeTest {
 	     );
 	 }
 	 
-	 @Disabled
 	 @Test
 	 void testMakeChange92Cents() throws BadChangeException {
 	     assertEquals(
