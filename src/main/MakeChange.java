@@ -2,7 +2,7 @@
  Name: Caleb Bettencourt, Joann Monteiro, Masaki Takenaka, 
  Sama Aledan, Tan Pham, Valmir Muratovski
 
-Student ID: 991727296
+Student ID: 991726993, 991741787, 991727296
 Assignment: ICE3
 
 This class calculates change using quarters, dimes, and nickels.
