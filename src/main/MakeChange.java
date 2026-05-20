@@ -13,15 +13,27 @@ public class MakeChange {
 	public static String makeChange(int cents) throws BadChangeException {
 		
 		int original = cents;
+		int remainder = cents % 5;
+		
+		if (remainder == 1 || remainder == 2) cents -= remainder;
+	    else if (remainder == 3 || remainder == 4) cents += (5 - remainder);
+		
 		int quarters = cents / 25;
 		cents %= 25;
+		
 		int dimes = cents / 10;
 		cents %= 10;
+		
 		int nickels = cents / 5;
-        return String.format("%d cents requires %d quarter, %d dime, %d nickel",
-                original,
-                quarters,
-                dimes,
-                nickels);
+		
+		String result = "";
+		if (quarters > 0) 
+			result += quarters + " quarter" + (quarters > 1 ? "s" : "");
+	    if (dimes > 0) 
+	    	result += (result.isEmpty() ? "" : ", ") + dimes + " dime" + (dimes > 1 ? "s" : "");
+	    if (nickels > 0) 
+	    	result += (result.isEmpty() ? "" : ", ") + nickels + " nickel" + (nickels > 1 ? "s" : "");
+	    
+	    return original + " cents requires " + result;
     }
 }
